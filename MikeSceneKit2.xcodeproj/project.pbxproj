@@ -15,6 +15,7 @@
 		85E483561C9442A20097551D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E483541C9442A20097551D /* LaunchScreen.storyboard */; };
 		85E483611C9442A20097551D /* MikeSceneKit2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E483601C9442A20097551D /* MikeSceneKit2Tests.swift */; };
 		85E4836C1C9442A20097551D /* MikeSceneKit2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E4836B1C9442A20097551D /* MikeSceneKit2UITests.swift */; };
+		85E4837A1C9A47FC0097551D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E483791C9A47FC0097551D /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		85E483671C9442A20097551D /* MikeSceneKit2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MikeSceneKit2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E4836B1C9442A20097551D /* MikeSceneKit2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MikeSceneKit2UITests.swift; sourceTree = "<group>"; };
 		85E4836D1C9442A20097551D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85E483791C9A47FC0097551D /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				85E483521C9442A20097551D /* Assets.xcassets */,
 				85E483541C9442A20097551D /* LaunchScreen.storyboard */,
 				85E483571C9442A20097551D /* Info.plist */,
+				85E483791C9A47FC0097551D /* GameScene.swift */,
 			);
 			path = MikeSceneKit2;
 			sourceTree = "<group>";
@@ -196,13 +199,16 @@
 				TargetAttributes = {
 					85E483451C9442A20097551D = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 					};
 					85E4835B1C9442A20097551D = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 85E483451C9442A20097551D;
 					};
 					85E483661C9442A20097551D = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 85E483451C9442A20097551D;
 					};
 				};
@@ -260,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E4837A1C9A47FC0097551D /* GameScene.swift in Sources */,
 				85E4834E1C9442A20097551D /* GameViewController.swift in Sources */,
 				85E4834A1C9442A20097551D /* AppDelegate.swift in Sources */,
 			);
@@ -404,9 +411,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MikeSceneKit2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenantsync.MikeSceneKit2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -415,9 +424,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MikeSceneKit2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenantsync.MikeSceneKit2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -430,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenantsync.MikeSceneKit2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MikeSceneKit2.app/MikeSceneKit2";
 			};
 			name = Debug;
@@ -442,6 +454,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenantsync.MikeSceneKit2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MikeSceneKit2.app/MikeSceneKit2";
 			};
 			name = Release;
@@ -454,6 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenantsync.MikeSceneKit2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MikeSceneKit2;
 				USES_XCTRUNNER = YES;
 			};
@@ -466,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenantsync.MikeSceneKit2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MikeSceneKit2;
 				USES_XCTRUNNER = YES;
 			};
@@ -490,6 +505,7 @@
 				85E483721C9442A20097551D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85E483731C9442A20097551D /* Build configuration list for PBXNativeTarget "MikeSceneKit2Tests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +514,7 @@
 				85E483751C9442A20097551D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85E483761C9442A20097551D /* Build configuration list for PBXNativeTarget "MikeSceneKit2UITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +523,7 @@
 				85E483781C9442A20097551D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
